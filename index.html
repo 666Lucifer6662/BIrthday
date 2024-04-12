@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0px;
+        }
+        .First_Page{
+            width: 100%;
+            height: 100vh;
+            background: url("Baground 1.jpg") top right no-repeat;
+            background-size: auto;
+            background-size: cover;
+            position: relative;
+        }
+
+        .Section-title{
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: right;
+            justify-content: center;
+        }
+
+        .Name{
+            margin: 0px;
+            padding-right: 200px;
+            text-align: right;
+            font-size: 70px;
+            color: white;
+        }
+        .Name1{
+            margin: 0px;
+            padding-right: 220px;
+            text-align: right;
+            font-size: 50px;
+            color: lightblue;
+        }
+        #circle {
+            position: relative;
+            width: 100%; /* Adjust as needed */
+            height: 100vh; /* Adjust as needed */
+            margin: 50px auto;
+            overflow: hidden;
+        }
+
+        .circle-img {
+            position: absolute;
+            width: 20%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+        }
+
+        .circle-img1 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left: 0%;
+        }
+        .circle-img1:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+        
+    
+        .circle-img2 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 24%;
+            left: 0%;
+        }
+        .circle-img2:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img3 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 47%;
+            left: 0%;
+        }
+        .circle-img3:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+        .circle-img4 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 0%;
+        }
+        .circle-img4:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+        .circle-img5 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 15%;
+        }
+        .circle-img5:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+        
+        .circle-img6 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 30%;
+        }
+        .circle-img6:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+        .circle-img7 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 44%;
+        }
+        .circle-img7:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img8 {
+            position: absolute;
+            width: 12%; /* Smaller size */
+            height: 20%; /* Smaller size */
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 58%;
+        }
+        .circle-img8:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img9 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 72%;
+        }
+        .circle-img9:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img10 {
+            position: absolute;
+            width: 12%;
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 70%;
+            left: 86%;
+        }
+        .circle-img10:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img11 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 47%;
+            right: 0%;
+        }
+        .circle-img11:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img12 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 24%;
+            right: 0%;
+        }
+        .circle-img12:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img13 {
+            position: absolute;
+            width: 12%; 
+            height: 20%;
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            right: 0%;
+        }
+        .circle-img1:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img14 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left: 72%;
+        }
+        .circle-img14:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img15 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left: 58%;
+        }
+        .circle-img15:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img16 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left: 44%;
+        }
+        .circle-img16:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img17 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left:30%;
+        }
+        .circle-img17:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+
+        .circle-img18 {
+            position: absolute;
+            width: 12%; 
+            height: 20%; 
+            object-fit: cover;
+            border-radius: 10%;
+            transition: transform 0.3s ease;
+            top: 0%;
+            left:15%;
+        }
+        .circle-img18:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+
+        .circle-img20 {
+            position: absolute;
+            width: 12%; 
+            height: 20%;
+            object-fit: cover;
+            border-radius: 50%;
+            transition: transform 0.3s ease;
+            top: 29%;
+            left: 78%;
+        }
+        .circle-img1:hover{
+            width: 13%; /* Smaller size */
+            height: 21%;
+        }
+        
+        #center-text {
+            position: absolute;
+            top: 78%;
+            left: 53%;
+            transform: translate(-50%, -50%);
+            font-size: 41px;
+            text-align: center;
+            color: black;
+            padding: 10px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            height: 72%;
+            width: 72%;
+            margin-top: auto;
+            max-width: 100%;
+            height: 100hv;
+            
+        }
+
+        #center-text:hover {
+            background-color: transparent;
+        }
+
+        .video-container {
+            width: 100%;
+            overflow-x: auto; /* Enable horizontal scrolling */
+            white-space: nowrap; /* Keep videos in a single line */
+        }
+
+        .video {
+            display: inline-block;
+            margin: 0 10px; /* Add spacing between videos */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="First_Page"> 
+    <div class="Section-title">
+        <p class="Name">Happy Brithday</p>
+        <p class="Name1">Varsha</p>
+    </div>
+    </div>
+    <div id="circle">
+        <div id="center-text">Hope you Had a wonderful year</div>
+        <!-- Images are added via JavaScript -->
+    
+
+        <img src="1.jpg" class="circle-img1" >
+        <img src="2.jpg" class="circle-img2" >
+        <img src="3.jpg" class="circle-img3" >
+        <img src="4.jpg" class="circle-img4" >
+        <img src="5.jpg" class="circle-img5" >
+        <img src="6.png" class="circle-img6" >
+        <img src="7.png" class="circle-img7" >
+        <img src="8.png" class="circle-img8" >
+        <img src="9.png" class="circle-img9" >
+        <img src="10.png" class="circle-img10" >
+        <img src="11.png" class="circle-img11" >
+        <img src="12.png" class="circle-img12" >
+        <img src="13.png" class="circle-img13" >
+        <img src="14.png" class="circle-img14" >
+        <img src="15.png" class="circle-img15" >
+        <img src="16.png" class="circle-img16" >
+        <img src="17.png" class="circle-img17" >
+        <img src="18.png" class="circle-img18" >
+        <!--<img src="20.jpg" class="circle-img20" onmouseover="hoverImage('20.jpg')" onmouseout="unhoverImage()"> -->
+    </div>
+
+    <div class="video-container">
+        <video class="video" controls>
+            <source src="1.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="video" controls>
+            <source src="2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <video class="video" controls>
+            <source src="3.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+
+
+    <script>
+        const images = 20; // Number of images
+        const circle = document.getElementById('circle');
+
+        for (let i = 1; i <= images; i++) {
+            let img = document.createElement('img');
+            img.src = `${i}.jpg`; // Assuming all images are JPG
+            img.className = 'circle-img';
+            let angle = (i - 1) * (360 / images);
+            let radius = 160; // Adjust as needed
+            img.style.left = `${50 + radius * Math.cos(angle * Math.PI / 180)}%`;
+            img.style.top = `${50 + radius * Math.sin(angle * Math.PI / 180)}%`;
+            img.style.transform = `translate(-50%, -50%)`;
+            img.addEventListener('mouseover', () => hoverImage(`${i}.jpg`));
+            img.addEventListener('mouseout', unhoverImage);
+            circle.appendChild(img);
+        }
+
+        function hoverImage(imgSrc) {
+            const centerText = document.getElementById('center-text');
+            centerText.style.backgroundImage = `url(${imgSrc})`;
+            centerText.innerText = '';
+        }
+
+        function unhoverImage() {
+            const centerText = document.getElementById('center-text');
+            centerText.style.backgroundImage = 'none';
+            centerText.innerText = 'Hope you Had a wonderful year';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            background: url("Moon.jpg") top right no-repeat;
+            background-size: auto;
+            background-size: cover;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .Greetings {
+            margin: 0;
+            text-align: center;
+            font-size: 100px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out; /* Smooth fade-in effect */
+        }
+        .Greetings1 {
+            margin: 0;
+            text-align: center;
+            font-size: 90px;
+            opacity: 0; /* Initially hidden */
+            transition: opacity 1s ease-in-out; /* Smooth fade-in effect */
+        }
+    </style>
+</head>
+<body>
+    <div class="Section-title">
+        <p class="Greetings" id="Vijay">The Moon is beautiful,</p>
+        <p class="Greetings1" id="Vijay" >isn't it?</p>
+    </div>
+
+    <script>
+        // Wait for the page to load
+        document.addEventListener("DOMContentLoaded", function() {
+            // Delay the appearance of "Welcome" by 1 second
+            setTimeout(function() {
+                document.querySelector(".Greetings").style.opacity = 1;
+            }, 2000);
+            // Delay the appearance of "Hello" by 2 seconds
+            setTimeout(function() {
+                document.querySelector(".Greetings1").style.opacity = 1;
+            }, 5000);
+
+            // Redirect to index.html after 3 seconds
+            setTimeout(function() {
+                window.location.href = "index.html";
+            }, 8000);
+            
+        });
+        document.getElementById('Vijay').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of following the link
+        location.reload(); // Reload the page
+        });
+    </script>
+</body>
+</html>
